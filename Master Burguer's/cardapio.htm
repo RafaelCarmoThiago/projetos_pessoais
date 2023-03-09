@@ -1,0 +1,305 @@
+<html>
+<head>
+    <title>Cardápio 	- Leptospirose Burger's</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+
+header{
+		padding: 0;
+		margin: 0;
+        background-color: #ff7c24;
+        width: auto;
+		height: 160px;
+		border: auto solid #ff7c24;
+    }
+	
+	#links{	
+		z-index: 2;/*estopula camadas*/
+		position: absolute;/* permite que o objeto seja posicionado em qualquer parte do layout */
+		float: right; /* faz com o que os itens sejam alinhados a direita */
+		margin-top: 23px;/* movimenta 60 px do topo */
+		margin-left: 250px;/*movimenta 190 px a esquerda*/
+		color: #ffcc0c;
+		width: 800px;/* dimensão em largura da DIV */
+		height: 102px;/* dimensão em altura da DIV*/
+		font-family: Capuche Trial Black, times;
+		font-size:20px;
+		border: 5px solid #ffcc0c;
+		border-radius: 99px 1px 99px 1px;
+		background-color: #d55a08;
+		
+	}
+
+	nav li{
+		float:left;
+		margin-left:120px;
+		margin-top:22px;
+		list-style-type:none;
+
+	}
+
+	nav li a{
+		text-decoration:none;
+		display: block;
+		color: white;
+		line-height: 30px;
+	}
+
+	nav li a:hover{
+		-mox-transition: all 0.5s ease-in-out;
+		-webkit-transition:all 0.5s ease-in-out;
+		-o-transition:all 0.5s ease-in-out;
+		-ms-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;/*anima qualquer propriedade alterada*/
+		background:	#ed1010;
+		color:white;
+		border-radius: 5px 5px 5px 5px;
+		padding:0px;
+		border:solid 0px;
+	}
+	nav li ul li, nav li ul li a{
+	
+		color: black;
+		width:100%;
+		margin:0;
+		background:3px 0 0 0;
+		clear:both;/*anula o float*/
+
+	}
+
+	/* Menu dropdown */
+	
+		
+
+	nav li:hover ul{
+		display:block;
+		
+	}
+	
+	.module {
+		width: auto;
+		height: 2500px;
+		background: white;
+		position: relative;
+		border: 5px solid yellow;  
+		margin: 20px;
+	}
+	.module:after {
+		content: '';
+		position: absolute;
+		top: -10px;
+		left: -10px;
+		right: -10px;
+		bottom: -10px;
+		background: red;
+		z-index: -1;
+	}
+	
+	#hamburguers{
+		height:300px;
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		gap: 50px;
+		padding: 10px;
+	}
+	
+	#hamburguers div{
+		text-align: center;
+		padding: 20px 14;
+		font-size: 30px;	
+	}
+	
+	#bebidas{
+		height:300px;
+		display: grid;
+		grid-template-columns: 550px auto auto auto;
+		gap: 50px;
+		padding: 10px;
+	}
+	
+	#bebidas div{
+		text-align: center;
+		padding: 20px 30;
+		font-size: 30px;	
+	}
+	
+	#complementos{
+		height:300px;
+		display: grid;
+		grid-template-columns: 550px auto auto auto;
+		gap: 50px;
+		padding: 10px;
+	}
+	
+	#complementos div{
+		text-align: center;
+		padding: 20px 30;
+		font-size: 30px;	
+	}
+	
+	#combos{
+		height:300px;
+		display: grid;
+		grid-template-columns: 550px auto auto auto;
+		gap: 50px;
+		padding: 10px;
+	}
+	
+	#combos div{
+		text-align: center;
+		padding: 20px 30;
+		font-size: 30px;	
+	}
+
+	h2, h3{
+		font-family:Capuche Trial Black, times ;
+        color: black;
+		text-align:center;
+	}
+	
+		body{
+		background-image:url(fundo.png);
+		
+	}
+
+	.imagem1{
+        opacity: 0.8;
+    } 
+
+	.imagem1:hover{
+        opacity: 1;
+    } 
+	
+</style>
+
+</head>
+
+<!--separação-->
+	
+<header>
+	<center>
+    <img src="LOGO.png" width="1000px">
+	</center>
+</header>
+<body>
+
+<div id="links"><!--inicio links-->	
+	<nav>
+		<ul>
+			<li><a href="inicio.htm"> Início </a></li>
+			<li><a href="cardapio.htm"> Cardápio </a></li>
+			<li><a href="creditos.htm"> Créditos </a></li>
+		</ul>	
+	</nav>
+</div> 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="module">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2>HAMBURGUERS</h2>
+<div id="hamburguers">
+	<div class="item1"><h3> X-Classic </h3><div class="imagem1"> 
+		<img src="hamburguer1.png" width="300px" height="300px">
+		<p> <button type="button" class="btn btn-primary btn-lg"> Adicionar</button></p>	
+	</div></div>
+	<div class="item2"><h3> X-Master </h3><div class="imagem1"> 		
+		<img src="hamburguer2.png" width="300px" height="300px">
+		<p> <button type="button" class="btn btn-primary btn-lg"> Adicionar</button></p>	
+	</div></div>
+	<div class="item3"><h3> X-Chicken </h3><div class="imagem1"> 
+		<img src="hamburguer3.png" width="320px" height="300px">
+		<p> <button type="button" class="btn btn-primary btn-lg"> Adicionar</button></p>	
+	</div></div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>	
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2>BEBIDAS</h2>
+<div id="bebidas">
+	<div class="item1"><h3> Coca-Cola </h3><div class="imagem1">
+		<img src="bebida1.png" width="200px" height="300px">
+		<p> <button type="button" class="btn btn-primary btn-lg"> Adicionar</button></p>	
+	</div></div>
+	<div class="item2"><h3> Suco de Laranja </h3><div class="imagem1"> 
+		<img src="bebida2.png" width="300px">
+		<p> <button type="button" class="btn btn-primary btn-lg"> Adicionar</button></p>	
+	</div></div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2>COMPLEMENTOS</h2>
+<div id="complementos">
+	<div class="item1"><h3> Batata Fritas </h3><div class="imagem1">
+		<img src="complemento1.png" width="300px" >
+		<p> <button type="button" class="btn btn-primary btn-lg"> Adicionar</button></p>	
+	</div></div>
+	<div class="item2"><h3> Nuggets </h3><div class="imagem1"> 
+		<img src="complemento2.png" width="300px">
+		<br><br><br>
+		<p> <button type="button" class="btn btn-primary btn-lg"> Adicionar</button></p>	
+	</div></div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2>COMBOS</h2>
+<div id="combos">
+	<div class="item1"><h3> Combo Classico </h3><div class="imagem1">
+		<img src="combos1.png" width="350px">
+		<p> <button type="button" class="btn btn-primary btn-lg"> Adicionar</button></p>	
+	</div></div>
+	<div class="item2"><h3> Combo Ultra </h3><div class="imagem1"> 
+		<img src="combos2.png" width="350px">
+		<p> <button type="button" class="btn btn-primary btn-lg"> Adicionar</button></p>	
+	</div></div>
+</div>
+</body>
+</html>

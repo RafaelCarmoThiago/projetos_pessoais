@@ -1,0 +1,183 @@
+<html>
+<head>
+    <title>Master Burger's</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+<style>
+	header{
+		padding: 0;
+		margin: 0;
+        background-color: #ff7c24;
+        width: auto;
+		height: 160px;
+		border: auto solid #ff7c24;
+    }
+	
+	#links{	
+		z-index: 2;/*estopula camadas*/
+		position: absolute;/* permite que o objeto seja posicionado em qualquer parte do layout */
+		float: right; /* faz com o que os itens sejam alinhados a direita */
+		margin-top: 23px;/* movimenta 60 px do topo */
+		margin-left: 250px;/*movimenta 190 px a esquerda*/
+		color: #ffcc0c;
+		width: 800px;/* dimensão em largura da DIV */
+		height: 102px;/* dimensão em altura da DIV*/
+		font-family: Capuche Trial Black, times;
+		font-size:20px;
+		border: 5px solid #ffcc0c;
+		border-radius: 99px 1px 99px 1px;
+		background-color: #d55a08;
+		
+	}
+
+	nav li{
+		float:left;
+		margin-left:120px;
+		margin-top:22px;
+		list-style-type:none;
+
+	}
+
+	nav li a{
+		text-decoration:none;
+		display: block;
+		color: white;
+		line-height: 30px;
+	}
+
+	nav li a:hover{
+		-mox-transition: all 0.5s ease-in-out;
+		-webkit-transition:all 0.5s ease-in-out;
+		-o-transition:all 0.5s ease-in-out;
+		-ms-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;/*anima qualquer propriedade alterada*/
+		background:	#ed1010;
+		color:white;
+		border-radius: 5px 5px 5px 5px;
+		padding:0px;
+		border:solid 0px;
+	}
+	nav li ul li, nav li ul li a{
+	
+		color: black;
+		width:100%;
+		margin:0;
+		background:3px 0 0 0;
+		clear:both;/*anula o float*/
+
+	}
+
+	/* Menu dropdown */
+	
+		
+
+	nav li:hover ul{
+		display:block;
+		
+	}
+	
+	body{
+		background-image:url(fundo.png);
+		
+	}
+	
+	h2{
+		font: bold 30px fantasy;
+        color: #ff7c24;
+		text-align:center;
+	}
+
+	p{
+		font: bold 15px arial;
+		color: black;
+	}
+	
+
+</style>
+
+<header>
+	<center>
+    <img src="LOGO.png" width="1000px">
+	</center>
+</header>
+
+<body>
+
+
+
+<div id="links"><!--inicio links-->
+	<nav>
+		<ul>
+			<li><a href="inicio.htm"> Início</a></li>
+			<li><a href="cardapio.htm"> Cardápio</a></li>
+			<li><a href="creditos.htm"> Créditos </a></li>
+		</ul>	
+	</nav>
+</div>
+</div> 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+	<div class "container">
+	
+		<div id="meuCarousel" class="carousel slide" data-ride="carousel">
+	
+			<ol class="carousel-indicators">
+				<li data-target="#meuCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#meuCarousel" data-slide-to="1"></li>
+				<li data-target="#meuCarousel" data-slide-to="2"></li>
+			</ol>
+	
+		<div class="carousel-inner">
+	
+			<div class="item active" >
+					<img src="Combo1.png" style="width:100%;">
+					<div class="carousel-caption">
+					</div>
+			</div>
+	
+			<div class="item">
+				<img src="desconto1.png" style="width:100%;">
+				<div class="carousel-caption">
+				</div>
+			</div>	
+	
+			<div class="item">
+				<img src="Combo2.png" style="width:100%;">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<h2>QUEM SOMOS NÓS</h2>
+<center><p>Somos Master Burguer's®, fazemos hamburguers desde 1939 com muito amor e dedição, temos uma historia extensa que apessar de muitos momentos de aixa seguimos em frente para fazermos oque fazemos melhor: hamburguers!.</p></center>
+
+<h2>OQUE NÓS PREZAMOS </h2>
+<center><p>Nós da Master Burguer's® prezamos pela melhor qualidade possivel para nossos lanches e para isso temos um codigo de conduta de 3 itens, que seguimos a risca:</p></center>
+<center><p>1.Dedicação 2.Qualidade 3.Amor</p></center>
+
+<h2>ONDE NOS ENCONTRAR	</h2>
+<center><p>Facíl, pode nos achar facilmente na Avenida Bananal, Bairro do limoeiro em São paulo ou no nosso aplicavo Master Burguer's Club®, te esperamos ;)</p></center>
+
+<br>
+<br>
+<br>
+<br>
+
+<img src="app.png" alt="Aproveite nosso app!" width="1263x" height="500px">
+
+</body>
+</html>

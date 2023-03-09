@@ -1,0 +1,237 @@
+<html>
+<head>
+    <title>Funcionarios do mês</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+<style>
+
+header{
+    padding: 0;
+    margin: 0;
+    background-color: #ff7c24;
+    width: auto;
+    height: 160px;
+    border: auto solid #ff7c24;
+}
+    
+#links{ 
+    z-index: 2;/*estopula camadas*/
+    position: absolute;/* permite que o objeto seja posicionado em qualquer parte do layout */
+    float: right; /* faz com o que os itens sejam alinhados a direita */
+    margin-top: 23px;/* movimenta 60 px do topo */
+    margin-left: 250px;/*movimenta 190 px a esquerda*/
+    color: #ffcc0c;
+    width: 800px;/* dimensão em largura da DIV */
+    height: 102px;/* dimensão em altura da DIV*/
+    font-family: Capuche Trial Black, times;
+    font-size:20px;
+    border: 5px solid #ffcc0c;
+    border-radius: 99px 1px 99px 1px;
+    background-color: #d55a08;
+        
+    }
+
+nav li{
+    float:left;
+    margin-left:120px;
+    margin-top:22px;
+    list-style-type:none;
+}
+
+nav li a{
+    text-decoration:none;
+    display: block;
+    color: white;
+    line-height: 30px;
+}
+
+nav li a:hover{
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background: #ed1010;
+    color:white;
+    border-radius: 5px 5px 5px 5px;
+    padding:0px;
+    border:solid 0px;
+}
+
+nav li ul li, nav li ul li a{   
+    color: black;
+    width:100%;
+    margin:0;
+    background:3px 0 0 0;
+    clear:both;
+}
+
+nav li:hover ul{
+    display:block;
+}
+
+header{
+    text-align: center; 
+    background-color: #ff7c24;
+    width: auto;
+    height: 160px;
+    border: auto solid #ff7c24;
+    }
+
+.logo{
+    width: 1000px;
+}
+
+body{
+	background-image:url(fundo.png);
+}
+
+.cartoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.cartao1, .cartao2, .cartao3{
+    height: 260px;
+    width: 420px;
+    border: #ed1010 solid 6px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #ff7c24;
+    box-shadow:inset 0 0 80px #eda778;
+    z-index: 1; 
+    overflow:hidden;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.conteudo_cartao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 12px;
+    margin-left: 8px;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    color: black;
+    font-weight: bold
+}
+
+h3, h1{
+    text-align: center;
+    color: black;
+}
+
+.dese{
+    height: 150px;
+    width: 150px;
+    border-radius: 60px;
+    filter:brightness(0);
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.cartao1:hover, .cartao2:hover, .cartao3:hover{
+    height: 500px;
+    color: white;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.cartao1:hover img, .cartao2:hover img, .cartao3:hover img {
+    filter:brightness(1);
+	border-radius: 150px;
+    height: 250px;
+    width: 250px;
+	-ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.cartao1:hover p, .cartao2:hover p, .cartao3:hover p{
+	color:white;
+	-ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.conteudo_cartao:hover{
+    white-space: normal;
+    overflow: visible;
+    height: auto;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.conteudo_cartao{
+    white-space: normal;
+    overflow: visible;
+    height: auto;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+</style>
+</head>
+<header>
+    <img src="LOGO.png" class="logo">
+</header>
+
+<body>
+<div id="links"><!--inicio links--> 
+    <nav>
+        <ul>
+            <li><a href="inicio.htm"> Início </a></li>
+            <li><a href="cardapio.htm"> Cardápio </a></li>
+            <li><a href="creditos.htm"> Créditos </a></li>
+        </ul>   
+    </nav>
+</div> 
+
+<br><br><br><br><br><br><br><br>    
+
+
+<h1>Equipe dos desenvolvedores</h1>
+<br><br><br>
+<div class="cartoes">
+    <div class="cartao1">
+        <h3> Rafael </h3>
+        <div class="conteudo_cartao">
+            <img src="mestre1.png" class="dese">
+            <p>Nome: Rafael Carmo Thiago</p>
+            <p>Nascimento: 17/3/2006</p>
+            <p>Formações: 1° e 2° Medio de informatica</p>
+            <p>Idiomas: Português nativo e Inglês Mediano</p>
+            <p >Considerações: Foi legal fazer este projeto com meus amigos, aprendi muito e guardo com orgulho esse projeto e sou grato pelo aprendizado.</p>
+        </div>
+    </div>
+    <div class="cartao2">
+        <h3> Augusto </h3>
+        <div class="conteudo_cartao">   
+            <img src="mestre2.png" class="dese">
+            <p>Nome: Augusto Dias de Souza</p>
+            <p>Nascimento: 01/10/2005</p>
+            <p>Formações: 1° e 2° Medio de informatica</p>
+            <p>Idiomas: Português nativo, inglês compreensivel e espanhol mediano</p>
+            <p class="p">Considerações:  Esse talvez tenha sido o melhor projeto que ja realizei, ainda tenho muito a melhorar, mas com certeza isso me motiva a ser mais do que sou.</p>
+        </div>
+    </div>
+    <div class="cartao3">
+        <h3> Tiago </h3> 
+        <div class="conteudo_cartao">
+            <img src="mestre3.png" class="dese">
+            <p>Nome: Tiago Felix da Silva</p>
+            <p>Nascimento: 01/10/2005</p>
+            <p>Formações: 1° e 2° Medio de informatica</p>
+            <p>Idiomas: Português nativo e Inglês Médio</p>
+            <p>Considerações: Implementação de códigos de css e html para projeto de site de hamburgueria, esperamos que tivemos um bom desempenho na avaliação final da nossa criação, o Master Burguer's.</p>
+        </div>  
+    </div>
+</div>
+
+<br><br><br>
+</body>
+
+</html>
