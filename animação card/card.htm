@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>negocio ae</title>
+
+<style>
+body{
+    background-color: #373737;
+}    
+
+.ct_invisi{
+    width: 280px;
+    height: 450px;
+    border-radius: 30px;
+    display: flex;
+    margin: 50px auto;
+    transition: all 0.5s;   
+}
+
+.cartao{
+    display: block;
+    width: 280px;
+    height: 450px;
+    background-color: aqua;
+    border-radius: 30px;
+    transition: all 0.5s;
+    z-index: 5 ;
+    position: absolute;
+    
+}
+
+.ct_invisi:hover{
+    width: 400px;
+    height: 550px;
+    margin: 1px auto;
+}
+
+.cartao:hover{
+    width: 400px;
+    height: 550px;
+    transition: all 0.5s;
+    margin: 1px auto;
+    
+}
+
+.conteudo_cartao{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 350px;
+    transition: all 0.5s;
+}
+
+ .ct_invisi:hover .conteudo_cartao{
+    margin-top: 450px;
+ }
+
+.container{
+    display: grid;
+    grid-template-columns: 150px 100px;
+    grid-template-rows: 250px 10px;
+    justify-content: center;
+}
+
+.cartaozin1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 38);
+    border-radius: 30px;
+    transition: all 1s;
+}
+
+.cartaozin2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 255);
+    border-radius: 30px;
+    transition: all 1s;
+}
+
+.cartaozin3{ 
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 128, 0);
+    border-radius: 30px;
+    transition: all 1s;
+}
+
+.cartaozin4{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 128);
+    border-radius: 30px;
+    transition: all 1s;
+}
+
+.mini_cartaozin1{
+    width: 50px;
+    height: 50px;
+    background-color: chocolate;
+    border-radius: 30px;
+    margin-top: 10px;
+    transition: all 0.5s;
+}
+
+.mini_cartaozin2{
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+.mini_cartaozin3{
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+
+.mini_cartaozin4{
+    width: 50px;
+    height: 50px;
+    background-color: skyblue;
+    border-radius: 30px;
+    transition: all 0.5s;
+    margin-left: 60px;
+}
+
+.mini_cartaozin5{
+    width: 50px;
+    height: 50px;
+    background-color: lawngreen;
+    border-radius: 30px;
+    transition: all 0.5s;
+    margin-left: 60px;
+}
+
+.mini_cartaozin6{
+    width: 50px;
+    height: 50px;
+    background-color: navy;
+    border-radius: 30px;
+    transition: all 0.5s;
+    margin-left: 60px;
+}
+
+.mini_cartaozin7{
+    width: 50px;
+    height: 50px;
+    background-color: salmon;
+    border-radius: 30px;
+    transition: all 0.5s;
+    margin-left: 60px;
+}
+
+.mini_cartaozin8{
+    width: 50px;
+    height: 50px;
+    background-color: khaki;
+    border-radius: 30px;
+    transition: all 0.5s;
+    margin-left: 60px;
+}
+
+.ct_invisi:hover .cartaozin1{
+    transform: translate(-130px, 10px);
+}
+
+.ct_invisi:hover .cartaozin2{
+    transform: translate(300px, 10px);
+}
+
+.ct_invisi:hover .cartaozin3{
+    transform: translate(-130px,160px);
+}
+
+.ct_invisi:hover .cartaozin4{
+    transform: translate(300px,160px);
+}
+
+.ct_invisi:hover .mini_cartaozin1{
+    transform: translate(-100px, -15px);
+}
+
+.ct_invisi:hover .mini_cartaozin2{
+    transform: translate(-100px, 50px);
+}
+
+.ct_invisi:hover .mini_cartaozin3{
+    transform: translate(-10px, 100px);
+}
+
+.ct_invisi:hover .mini_cartaozin4{
+    transform: translate(50px, -50px);
+}
+
+.ct_invisi:hover .mini_cartaozin5{
+    transform: translate(-150px, 50px);
+}
+
+.ct_invisi:hover .mini_cartaozin6{
+    transform: translate(-150px, -130px);
+}
+
+.ct_invisi:hover .mini_cartaozin7{
+    transform: translate(120px, -50px);
+}
+
+.ct_invisi:hover .mini_cartaozin8{
+    transform: translate(100px, 40px);
+}
+
+.cartaozin1:hover .cartao{
+    width: 450px;
+    height: 550px;
+}
+
+</style>
+</head>
+<body>
+    <div class="ct_invisi">
+    <div class="cartao">
+        <div class="conteudo_cartao">
+            <p>este é um cartao</p>
+            <p>alguma outra infomração</p>
+        </div>
+    </div>
+        <div class="container">
+            <div class="cartaozin1">
+                <div class="mini_cartaozin1"></div>
+                <div class="mini_cartaozin2"></div>
+            </div>
+            <div class="cartaozin2">
+                <div class="mini_cartaozin3"></div>
+                <div class="mini_cartaozin4"></div>
+            </div>
+            <div class="cartaozin3">
+                <div class="mini_cartaozin5"></div>
+                <div class="mini_cartaozin6"></div>
+            </div>
+            <div class="cartaozin4">
+                <div class="mini_cartaozin7"></div>
+                <div class="mini_cartaozin8 "></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
