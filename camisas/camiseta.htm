@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camisa a venda</title>
+    <link rel="stylesheet" href="camisa.css">
+    <script type="text/javascript" src="camisa.js"></script>
+</head>
+<body>
+    <div class="camisa">
+        <button class="seta1" onclick="seta_esq()"></button>
+        <div class="grande_camisa">
+            <img src="img/camisa1_vermelho.png" class="imagem" id="camisona" onload="camisona()">
+        </div>
+        <button class="seta2" id="seta_dir" onclick="seta_dir()"></button>
+        <div class="mini_camisas">
+            <img src="img/camisa1_vermelho.png" class="mini_camisa1" id="mini_camisa1" onclick="mini_camisa1()">
+            <img src="img/camisa2_vermelho.png" class="mini_camisa2" id="mini_camisa2" onclick="mini_camisa2()">
+            <img src="img/camisa3_vermelho.png" class="mini_camisa3" id="mini_camisa3" onclick="mini_camisa3()">
+        </div>
+    </div>
+    <div class="loja">
+        <div class="titulo">
+            <h1>Camisa Masculina</h1>
+            <h1>Normal Sem Estampa</h1>
+        </div>
+        <div class="informacoes">
+            <h2>R$ 300,00</h2>
+            <a href="datalhes.htm"><p class="link">Em até 12x de $25</p></a>
+            <p>R$270 à vista (10% de desconto)</p>
+        </div>
+        <br>
+        <div class="informacoes2">
+            <h2> Cor - </h2>
+            <div class="cores">
+                <div class="vermelho" onclick="vermelho()">
+                    <div class="circulo_verm" id="circulo_vermelho"></div>    
+                </div>
+                <div class="azul" onclick="azul()">
+                    <div class="circulo_azu" id="circulo_azul"></div>
+                </div>
+                <div class="verde" onclick="verde()">
+                    <div class="circulo_verd" id="circulo_verde"></div>
+                </div>
+                <div class="amarelo" onclick="amarelo()">
+                    <div class="circulo_ama" id="circulo_amarelo"></div>
+                </div>
+                <div class="rosa" onclick="rosa()">
+                    <div class="circulo_r" id="circulo_rosa"></div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="informacoes3">
+            <h2>Informações de entrega:</h2>
+            <p>Em estoque</p>
+            <p>Frete grátis</p>
+            <a href="datalhes.htm"><p class="link">ver datas de entrega</p></a>
+        </div>
+        <br>
+            <button class="botao">Compre aqui</button>
+            <button class="carrinho">🛒Colque no carrinho</button>
+    </div>
+
+
+
+</body>
+</html>

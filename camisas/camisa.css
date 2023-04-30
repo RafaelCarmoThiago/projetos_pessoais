@@ -1,0 +1,206 @@
+*{
+    font-family:arial;
+}
+
+body{
+    background-color: #434040;
+}
+
+.loja{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.informacoes{
+    line-height: 8px;
+}
+
+.titulo{
+    line-height: 8px;
+}
+
+h1{
+    font-weight: bolder;
+    color: white;
+}
+
+h2, p{
+    color:white;
+}
+
+a, .link{
+    color:#29CFF3;
+}
+
+.informacoes2{
+    display: flex;
+    flex-direction: column;
+}
+
+.cores{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+.circulo_verm, .circulo_azu, .circulo_verd, .circulo_ama, .circulo_r{
+    display: flex;
+    margin-top: -8px;
+    margin-left: -8px;
+    height: 65px;
+    width: 65px;
+    background-color: transparent;
+    border: transparent 3px solid;
+    border-radius: 50px;
+}
+
+.circulo_verm{
+    border-color: #D02D2D;
+}
+
+
+.vermelho{
+    background-color: #D02D2D;
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
+}
+
+.azul{
+    background-color: #4D89FF;
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
+}
+
+.verde{
+    background-color: #18BF1F;
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
+}
+
+.amarelo{
+    background-color: #EEF239;
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
+}
+
+.rosa{
+    background-color: #F718D3;
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
+}
+
+.informacoes3{
+    line-height: 8px;
+}
+
+.botao{
+    background-color: #2C7EFA;
+    border-color: #2C7EFA;
+    border-radius: 10px;
+    width: 350px;
+    height: 50px;
+    color:white;
+    font-size: 20px;
+}
+
+.carrinho{
+    display: flex;
+    justify-self: start;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    width: auto;
+    height: 50px;
+    color:#29CFF3;
+}
+
+.camisa{
+    display: flex;
+    flex-direction: column;
+    float: right ;
+    margin: 10px 80px;
+}
+
+.grande_camisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 350px;
+    height: 500px;
+    border-radius: 30px;
+}
+
+.imagem{
+    width: 300px;
+    height: 300px;
+}
+
+.seta1, .seta2{
+    background-color: black;
+    border-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.seta1{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: -60px;
+}
+
+.seta1:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 15px solid transparent;;
+    border-right: white solid 15px;
+    right: 18px;
+    bottom: 8px;
+}
+
+.seta2{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 360px;
+}
+
+.seta2:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 15px solid transparent;
+    border-left: white solid 15px;
+    left: 18px;
+    bottom: 8px;
+}
+
+.mini_camisas{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.mini_camisa1, .mini_camisa2, .mini_camisa3{
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 10px;
+    border: transparent 2px solid;
+}
+
+.mini_camisa1{
+    border-color: black;
+}
